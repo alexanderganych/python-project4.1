@@ -43,13 +43,13 @@ def actions_with_words(text, n_word, action):
         text = ''.join(temp_text)
 
     # Преобразуем строку в список
-    print(f"\nСгенерированны {n_word} слов из строки имеющей {n} символов:\n{text}")
+    print(f"\nСгенерированы {n_word} слов из строки имеющей {n} символов:\n{text}")
     text_list = text.split()
 
     # Количество операция
     n_action = len(action)
     for i in range(n_word):
-        # Формируем индекцсы для операций так, чтобы выполнялись поочереди
+        # Формируем индексы для операций так, чтобы выполнялись поочереди
         index_for_action = i % n_action
 
         match action[index_for_action]:
